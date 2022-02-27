@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Open+Sans&display=swap');
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.primary-bg {
+    background: #2c9af5;
+}
+
+.secondary-bg {
+    background: #bcd2e1;
+}
+
+.tertiary-bg {
+    background: #ffcc3d;
+}
+
+.spacer {
+    margin-top: 1000px;
+}
