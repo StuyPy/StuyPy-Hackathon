@@ -12,8 +12,15 @@ h1 {
     font-weight: bold;
 }
 
+.anchor {
+    top: -120px;
+    position: relative;
+    display: block;
+    visibility: hidden;
+}
+
 .primary-bg {
-    background: #51aaf3;
+    background: #5eb0f3;
 }
 
 .secondary-bg {
@@ -24,7 +31,10 @@ h1 {
     background: #ffcc3d;
 }
 
+.spacer {
+    margin-bottom: 2000px;
+}
+
 #landing-img {
-    margin-top: 70px;
     width: 100%;
 }
