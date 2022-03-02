@@ -20,52 +20,49 @@
             href="style.css"
             rel="stylesheet"
         > 
-        
     </head>
     <body>
         
         <!-- MENU BAR -->
         
-        <div class="fluid-container fixed-top">
-            <nav id="navbar" class="px-3 navbar navbar-expand-lg navbar-light navbar-transparent">
-                <img src="resources/logos/logo_hackathon.png" height="60">
-                <button 
-                    class="navbar-toggler" 
-                    type="button" 
-                    data-toggle="collapse" 
-                    data-target="#navbarNav"
-                    aria-controls="navbarNav" 
-                    aria-expanded="false" 
-                    aria-label="Toggle navigation"
-                >
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="nav navbar-nav">
-                        <li class="nav-item active">
-                            <a class="nav-link text-white" href="#about">About</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link text-white" href="#">Schedule</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link text-white" href="#">FAQ</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link text-white" href="#">Sponsors</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link text-white" href="#">Our Team</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
+        <nav id="navbar" class="px-3 navbar navbar-expand-lg navbar-light navbar-transparent fixed-top">
+            <img src="resources/logos/logo_hackathon.png" height="60">
+            <button 
+                class="navbar-toggler" 
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link text-white" href="#about">About</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link text-white" href="#">Schedule</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link text-white" href="#">FAQ</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link text-white" href="#">Sponsors</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link text-white" href="#">Our Team</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
         <!-- LANDING --> 
 
-        <div class="fluid-container">
+        <div id="home-top">
             <img class="shadow" id="landing-img" src="resources/landing_image.png">
+            <img class="fadein" id="top-img" src="resources/logos/logo_hackathon_hd.png">
         </div>
 
         <!-- ABOUT -->
@@ -84,22 +81,24 @@
         <!-- SPONSORS -->
 
         <!-- FOOTER -->
+        
 
         <!-- SCRIPTS -->
-
         <script 
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
-            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
-            crossorigin="anonymous"
-        >
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" 
+            integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" 
+            crossorigin="anonymous">
+        </script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" 
+            integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" 
+            crossorigin="anonymous">
         </script>
         <script 
             src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
             integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
-            crossorigin="anonymous"
-        >
+            crossorigin="anonymous">
         </script>
         <script type="text/javascript" src="index.js"></script>
- 
     </body>
 </html>
