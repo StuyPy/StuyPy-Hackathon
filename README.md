@@ -1,1 +1,1 @@
-# stuypy.github.io
+StuyPy Hackathon
