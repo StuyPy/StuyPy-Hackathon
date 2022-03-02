@@ -10,3 +10,11 @@ function navbarChange() {
         navbar.classList.add("navbar-transparent")
     }
 }
+
+function onScrollFade() {
+    
+}
+
+function onScrollSlideRight() {
+
+}
