@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>StuyPy Hackathon</title>
 
-        <meta name="description" content="The website for the StuPy hackathon">
+        <meta name="description" content="The website for the StuyPy hackathon">
         <meta name="keywords" content="Python, StuyPy, Hackathon">
         <meta name="author" content="StuyPy">
 
@@ -20,6 +20,10 @@
             href="style.css"
             rel="stylesheet"
         > 
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        >
     </head>
     <body>
         
@@ -62,26 +66,24 @@
 
         <div id="home-top">
             <img class="shadow" id="landing-img" src="resources/landing_image.png">
-            <img class="fadein" id="top-img" src="resources/logos/logo_hackathon_hd.png">
+            <img class="animate__animated animate__fadeInDown" id="top-img" src="resources/logos/logo_hackathon_hd.png">
         </div>
 
         <!-- ABOUT -->
 
-        <div class="fluid-container content-section">
-            <div class="fluid-container">
-                <a id="about" class="anchor"></a>
-                <h1>About</h1>
-                <p>
-                    StuyPy is a casual, beginner-friendly club aiming to teach people with no prior 
-                    experience to code in Python, and to create projects while having fun. 
-                    We additionally want to introduce members to Python, and provide them with
-                    a strong foundation in the field of computer science from the ground up. 
-                </p>
-                <p>
-                    To better reinforce concepts and allow members to learn even more, We will be hosting
-                    StuyPy's first hackathon!
-                </p>
-            </div>   
+        <div class="on-scroll-animate animate__animated fluid-container content-section">
+            <a id="about" class="anchor"></a>
+            <h1>About</h1>
+            <p>
+                StuyPy is a casual, beginner-friendly club aiming to teach people with no prior 
+                experience to code in Python, and to create projects while having fun. 
+                We additionally want to introduce members to Python, and provide them with
+                a strong foundation in the field of computer science from the ground up. 
+            </p>
+            <p>
+                To better reinforce concepts and allow members to learn even more, We will be hosting
+                StuyPy's first hackathon!
+            </p> 
         </div>
 
         <div class="spacer"></div>

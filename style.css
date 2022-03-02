@@ -69,38 +69,6 @@ html {
     font-size: 20px;
 }
 
-/* animations */
-
-.fadein {
-    animation-duration: 1.5s;
-    animation-name: fadein;
-}
-
-.slidein-right {
-    animation-duration: 0.5s;
-    animation-name: slidein-right;
-}
-
-@keyframes fadein {
-    from {
-        opacity: 0%;
-    }
-    
-    to {
-        opacity: 100%;
-    }
-}
-
-@keyframes slidein-right {
-    from {
-        transform: translateX(-10%)
-    }
-
-    to {
-        transform: translateX(0%)
-    }
-}
-
 /* From HackClub CSS :D */
 /* https://css-theme.hackclub.dev/ */
 

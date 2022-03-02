@@ -1,3 +1,13 @@
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("animate__fadeInLeft")
+        }
+    })
+})
+
+observer.observe(document.querySelector('.on-scroll-animate'))
+
 window.onscroll = function(){navbarChange()}
 
 function navbarChange() {
@@ -9,12 +19,4 @@ function navbarChange() {
         navbar.classList.remove("navbar-filled")
         navbar.classList.add("navbar-transparent")
     }
-}
-
-function onScrollFade() {
-    
-}
-
-function onScrollSlideRight() {
-
 }
