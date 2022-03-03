@@ -7,15 +7,13 @@ html {
 }
 
 #home-top {
+    background-repeat: no-repeat;
+    background-image: url("resources/landing_image.png");
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-}
-
-#landing-img {
-    width: 100%;
-    height: 100vh;
 }
 
 #top-img {
