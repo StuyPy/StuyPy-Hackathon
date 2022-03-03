@@ -16,9 +16,13 @@ html {
     flex-direction: column;
 }
 
-#top-img {
+#top-logo {
     position: absolute;
     width: 40%;
+}
+
+#footer {
+    height: 50px; /* just for testing */
 }
 
 .navbar-filled {
@@ -58,13 +62,9 @@ html {
     margin: 2em;
 }
 
-.content-section h1 {
-    font-weight: bold;
-}
-
 .content-section p {
     margin-top: 10px;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 /* From HackClub CSS :D */

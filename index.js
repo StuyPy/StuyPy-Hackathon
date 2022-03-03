@@ -1,12 +1,25 @@
+var animationChoice = 0
+
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            entry.target.classList.add("animate__fadeInLeft")
+            if (animationChoice == 0) {
+                entry.target.classList.add("animate__fadeInLeft")
+                animationChoice = 1
+            } else {
+                entry.target.classList.add("animate__fadeInRight")
+                animationChoice = 0
+            }
+           
         }
     })
 })
 
-observer.observe(document.querySelector('.on-scroll-animate'))
+document.querySelectorAll(".on-scroll-animate").forEach(entry => {
+    if (entry) {
+        observer.observe(entry)
+    }
+})
 
 window.onscroll = function(){navbarChange()}
 
