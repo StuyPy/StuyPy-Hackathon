@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>StuyPy Hackathon</title>
 
-        <meta name="description" content="The website for the StuPy hackathon">
+        <meta name="description" content="The website for the StuyPy hackathon">
         <meta name="keywords" content="Python, StuyPy, Hackathon">
         <meta name="author" content="StuyPy">
 
@@ -16,48 +16,131 @@
             integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
             crossorigin="anonymous"
         >
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        >
         <link 
             href="style.css"
             rel="stylesheet"
         > 
     </head>
     <body>
+        
         <!-- MENU BAR -->
-        <div class="fluid-container fixed-top primary-bg">
-            <nav class="px-3 navbar navbar-expand-lg navbar-light">
-                <img src="resources/logos/logo_hackathon.png" height="60">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item active">
-                            <a class="nav-link text-white" href="#">About</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link text-white" href="#">Schedule</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link text-white" href="#">FAQ</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link text-white" href="#">Sponsors</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link text-white" href="#">Our Team</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+        
+        <nav id="navbar" class="px-3 navbar navbar-expand-lg navbar-light navbar-transparent fixed-top">
+            <img src="resources/logos/logo_hackathon.png" height="60">
+            <button 
+                class="navbar-toggler" 
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link text-white" href="#about">About</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link text-white" href="#schedule">Schedule</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link text-white" href="#faq">FAQ</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link text-white" href="#sponsors">Sponsors</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link text-white" href="#team">Our Team</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- LANDING --> 
+
+        <div id="home-top" class="shadow">
+            <img class="animate__animated animate__fadeInDown" id="top-logo" src="resources/logos/logo_hackathon_hd.png">
         </div>
 
         <!-- ABOUT -->
 
+        <div class="content-section fluid-container">
+            <!-- Anchor that is offset for menu links -->
+            <a id="about" class="anchor"></a> 
+            <div class="fluid-container on-scroll-animate animate__animated">
+                <h1>What is StuyPy?</h1>
+                <p>
+                    StuyPy is a casual, beginner-friendly club aiming to teach people with no prior 
+                    experience to code in Python, and to create projects while having fun. 
+                    We additionally want to introduce members to Python, and provide them with
+                    a strong foundation in the field of computer science from the ground up. 
+                </p>
+            </div>
+            <div class="fluid-container on-scroll-animate animate__animated">
+                <h1>The StuyPyThon</h1>
+                <p>
+                    To better reinforce the concepts we've and allow members to learn even more, We will
+                    be hosting StuyPy's first hackathon! Show what you've learned so far, and create a project
+                    which you can be proud of! This hackathon is open to <em>all members</em> (anyone can join 
+                    at the StuyActivities page), where you can work with others or solo if you wish.
+                </p> 
+            </div>
+        </div>
+
+        <!-- SCHEDULE -->
+
+        <div class="content-section fluid-container">
+            <!-- Anchor that is offset for menu links -->
+            <a id="schedule" class="anchor"></a>
+            <div>
+                <h1>Schedule</h1>
+                <p>schedule goes here</p>
+            </div>
+        </div>
+
+
+        <div class="spacer"></div>
+
         <!-- CLUB/STAFF -->
 
+        <div class="content-section fluid-container">
+
+        </div>
+
         <!-- SPONSORS -->
-        
+
+        <div class="content-section fluid-container">
+            
+        </div>
+
         <!-- FOOTER -->
- 
+        
+        <div id="footer" class="fluid-container primary-bg">
+            
+        </div>
+
+        <!-- SCRIPTS -->
+        <script 
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" 
+            integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" 
+            crossorigin="anonymous">
+        </script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" 
+            integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" 
+            crossorigin="anonymous">
+        </script>
+        <script 
+            src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+            crossorigin="anonymous">
+        </script>
+        <script type="text/javascript" src="index.js"></script>
     </body>
 </html>

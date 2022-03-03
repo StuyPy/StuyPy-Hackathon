@@ -1,15 +1,51 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Open+Sans&display=swap');
-
 body {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Phantom Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
 html {
     scroll-behavior: smooth;
 }
 
+#home-top {
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("resources/landing_image.png");
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#top-logo {
+    position: absolute;
+    width: 40%;
+}
+
+#footer {
+    height: 50px; /* just for testing */
+}
+
+.navbar-filled {
+    background: #5eb0f3;
+    transition: background .5s;
+}
+
+.navbar-transparent {
+    background: none;
+    transition: background .5s;
+}
+
+.anchor {
+    top: -120px;
+    position: relative;
+    display: block;
+    visibility: hidden;
+}
+
 .primary-bg {
-    background: #2c9af5;
+    background: #5eb0f3;
 }
 
 .secondary-bg {
@@ -19,3 +55,29 @@ html {
 .tertiary-bg {
     background: #ffcc3d;
 }
+
+.spacer {
+    margin-bottom: 2000px;
+}
+
+.content-section {
+    margin: 2em;
+}
+
+.content-section p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/* From HackClub CSS :D */
+/* https://css-theme.hackclub.dev/ */
+
+.button-fill {
+    color: white;
+    font-size: 1rem;
+    background-color: #5eb0f3;
+    padding: 15px 20px 15px 20px;
+    border: none;
+    border-radius: 30px;
+    font-weight: 900;
+  }
