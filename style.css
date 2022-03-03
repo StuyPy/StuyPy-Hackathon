@@ -7,6 +7,8 @@ html {
 }
 
 #home-top {
+    width: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-image: url("resources/landing_image.png");
     height: 100vh;
