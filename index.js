@@ -1,7 +1,7 @@
 const FRAMES = 9
 const SCHEDULE = document.getElementById("schedule-section")
 const SCHEDULE_IMAGE = document.getElementById("TESTING-ANIMATION")
-
+const START_PERCENTAGE = 40
 var animationChoice = 0
 
 const observer = new IntersectionObserver(entries => {
@@ -47,12 +47,12 @@ function scheduleAnimate() {
     var rect = SCHEDULE.getBoundingClientRect()
     var distanceFromTop = rect.top
     var percentageScroll = (distanceFromTop / window.innerHeight) * 100
-    var step = 50 / FRAMES
+    var step = START_PERCENTAGE / FRAMES
 
     if (percentageScroll < 0 || percentageScroll > 100) {
         return
     } else {
-        if (percentageScroll <= 50) {
+        if (percentageScroll <= START_PERCENTAGE) {
             var currentFrame = getFrameFromPercentage(percentageScroll, step)
             SCHEDULE_IMAGE.src = `resources/frames/${currentFrame}.png`
         }
