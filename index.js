@@ -1,3 +1,7 @@
+const FRAMES = 9
+const SCHEDULE = document.getElementById("schedule-section")
+const SCHEDULE_IMAGE = document.getElementById("TESTING-ANIMATION")
+
 var animationChoice = 0
 
 const observer = new IntersectionObserver(entries => {
@@ -10,7 +14,7 @@ const observer = new IntersectionObserver(entries => {
                 entry.target.classList.add("animate__fadeInRight")
                 animationChoice = 0
             }
-           
+
         }
     })
 })
@@ -21,7 +25,12 @@ document.querySelectorAll(".on-scroll-animate").forEach(entry => {
     }
 })
 
-window.onscroll = function(){navbarChange()}
+window.onscroll = function () { onScroll() }
+
+function onScroll() {
+    navbarChange()
+    scheduleAnimate()
+}
 
 function navbarChange() {
     var navbar = document.getElementById("navbar")
@@ -33,3 +42,26 @@ function navbarChange() {
         navbar.classList.add("navbar-transparent")
     }
 }
+
+function scheduleAnimate() {
+    var rect = SCHEDULE.getBoundingClientRect()
+    var distanceFromTop = rect.top
+    var percentageScroll = (distanceFromTop / window.innerHeight) * 100
+    var step = 50 / FRAMES
+
+    if (percentageScroll < 0 || percentageScroll > 100) {
+        return
+    } else {
+        if (percentageScroll <= 50) {
+            var currentFrame = getFrameFromPercentage(percentageScroll, step)
+            SCHEDULE_IMAGE.src = `resources/frames/${currentFrame}.png`
+        }
+    }
+}
+
+function getFrameFromPercentage(percentage, step) {
+    return Math.floor(FRAMES - (percentage / step))
+}
+
+
+

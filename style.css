@@ -36,6 +36,10 @@ html {
     display: flex;
 }
 
+.card {
+    margin: 1em;
+}
+
 .navbar-filled {
     background: #5eb0f3;
     transition: background .5s;
@@ -88,8 +92,12 @@ li .nav-link.active {
 }
 
 .social-logo {
-    width: 40px;
+    width: 30px;
     margin: 10px;
+}
+
+.list-group li {
+    background-color:#ffcc3d;
 }
 
 /* From HackClub CSS :D */
