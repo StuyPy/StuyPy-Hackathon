@@ -36,10 +36,6 @@ html {
     display: flex;
 }
 
-#footer {
-    height: 50px; /* just for testing */
-}
-
 .navbar-filled {
     background: #5eb0f3;
     transition: background .5s;
@@ -89,6 +85,11 @@ li .nav-link.active {
 .content-section p {
     margin-top: 10px;
     font-size: 18px;
+}
+
+.social-logo {
+    width: 40px;
+    margin: 10px;
 }
 
 /* From HackClub CSS :D */
