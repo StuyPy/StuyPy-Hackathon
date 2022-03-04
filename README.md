@@ -1,1 +1,1 @@
-StuyPy Hackathon
+The official StuyPy Hackathon website!
