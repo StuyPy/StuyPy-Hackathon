@@ -6,6 +6,15 @@ html {
     scroll-behavior: smooth;
 }
 
+
+@media only screen and (max-width: 600px) {
+
+    #about-section {
+        flex-direction: column;
+    }
+
+}
+
 #home-top {
     width: 100%;
     background-size: cover;
@@ -23,6 +32,10 @@ html {
     width: 40%;
 }
 
+#about-section {
+    display: flex;
+}
+
 #footer {
     height: 50px; /* just for testing */
 }
@@ -35,6 +48,15 @@ html {
 .navbar-transparent {
     background: none;
     transition: background .5s;
+}
+
+li .nav-link {
+    padding: 15px !important;
+}
+
+li .nav-link.active {
+    color:#0a90fd !important;
+    background-color:rgb(255, 255, 255) !important;
 }
 
 .anchor {

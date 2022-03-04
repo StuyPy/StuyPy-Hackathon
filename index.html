@@ -10,12 +10,14 @@
         <meta name="keywords" content="Python, StuyPy, Hackathon">
         <meta name="author" content="StuyPy">
 
+        <!-- BOOTSTRAP-->
         <link 
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
             rel="stylesheet" 
             integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
             crossorigin="anonymous"
         >
+        <!-- ANIMATIONS -->
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -25,10 +27,12 @@
             rel="stylesheet"
         > 
     </head>
-    <body>
+
+    <!-- scroll spy for current section indicator in menu bar -->
+    <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0" tabindex="0">
         
         <!-- MENU BAR -->
-        
+        <!-- menu bar is transparent at first, then changes to opaque after scrolling down-->
         <nav id="navbar" class="px-3 navbar navbar-expand-lg navbar-light navbar-transparent fixed-top">
             <img src="resources/logos/logo_hackathon.png" height="60">
             <button 
@@ -42,21 +46,21 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="nav navbar-nav">
-                    <li class="nav-item active">
+                <ul class="nav navbar-nav nav-pills">
+                    <li class="nav-item">
                         <a class="nav-link text-white" href="#about">About</a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link text-white" href="#schedule">Schedule</a>
                     </li>
-                    <li class="nav-item active">
-                        <a class="nav-link text-white" href="#faq">FAQ</a>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#team">Our Team</a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link text-white" href="#sponsors">Sponsors</a>
                     </li>
-                    <li class="nav-item active">
-                        <a class="nav-link text-white" href="#team">Our Team</a>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#faq">FAQ</a>
                     </li>
                 </ul>
             </div>
@@ -70,10 +74,10 @@
 
         <!-- ABOUT -->
 
-        <div class="content-section fluid-container">
+        <div id="about-section" class="content-section fluid-container">
             <!-- Anchor that is offset for menu links -->
             <a id="about" class="anchor"></a> 
-            <div class="fluid-container on-scroll-animate animate__animated">
+            <div class="p-4 fluid-container on-scroll-animate animate__animated">
                 <h1>What is StuyPy?</h1>
                 <p>
                     StuyPy is a casual, beginner-friendly club aiming to teach people with no prior 
@@ -82,7 +86,7 @@
                     a strong foundation in the field of computer science from the ground up. 
                 </p>
             </div>
-            <div class="fluid-container on-scroll-animate animate__animated">
+            <div class="p-4 fluid-container on-scroll-animate animate__animated">
                 <h1>The StuyPyThon</h1>
                 <p>
                     To better reinforce the concepts we've and allow members to learn even more, We will
@@ -95,28 +99,38 @@
 
         <!-- SCHEDULE -->
 
-        <div class="content-section fluid-container">
+        <div id="schedule-section" class="content-section fluid-container">
             <!-- Anchor that is offset for menu links -->
             <a id="schedule" class="anchor"></a>
-            <div>
-                <h1>Schedule</h1>
-                <p>schedule goes here</p>
-            </div>
+            <h1>Schedule</h1>
+            <!-- TODO -->
         </div>
-
-
-        <div class="spacer"></div>
 
         <!-- CLUB/STAFF -->
 
-        <div class="content-section fluid-container">
-
+        <div id="team-section" class="content-section fluid-container">
+            <!-- Anchor that is offset for menu links -->
+            <a id="team" class="anchor"></a>
+            <h1>Our Team</h1>
+            <!-- TODO: carousel with cards for team members -->
         </div>
 
         <!-- SPONSORS -->
 
-        <div class="content-section fluid-container">
-            
+        <div id="sponsors-section" class="content-section fluid-container">
+            <!-- Anchor that is offset for menu links -->
+            <a id="sponsors" class="anchor"></a>
+            <h1>Sponsors</h1>
+            <!-- TODO -->
+        </div>
+
+        <!-- FAQ -->
+
+        <div id="faq-section" class="content-section fluid-container">
+            <!-- Anchor that is offset for menu links -->
+            <a id="faq" class="anchor"></a>
+            <h1>FAQ</h1>
+            <!-- TODO -->
         </div>
 
         <!-- FOOTER -->
