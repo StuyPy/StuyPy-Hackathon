@@ -1,6 +1,7 @@
 :root {
     --primary: rgb(30, 31, 34);
     --secondary: #2e96eb;
+    --gradient-secondary: rgb(128, 119, 255);
     --tertiary: #ebb729;
     --content: rgba(77, 89, 107, 0.411);
 }
@@ -81,19 +82,22 @@ li .nav-link.active {
 
 .card-body {
     color: white;
+    border-radius: 0 0 15px 15px;
+    transition: transform 0.3s;
     transition: color 0.3s;
     transition: background-color 0.3s;
-    border-radius: 0 0 15px 15px;
     transition: border-color 0.3s;
     transition: border 0.1s;
 }
 
 .card-body:hover {
+    transform: scale(1.05);
     border-style: solid;
     border-width: 2px;
     border-color: var(--secondary);
     color: var(--secondary);
     background-color: white;
+    transition: transform 0.3s;
     transition: color 0.3s;
     transition: background-color 0.3s;
     transition: border-color 0.3s;
@@ -145,6 +149,11 @@ li .nav-link.active {
     margin: 10px;
 }
 
+.social-logo:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s;
+}
+
 #countdown {
     background-color: var(--content);
     border-radius: 20px;
@@ -153,6 +162,18 @@ li .nav-link.active {
 
 .countdown-label {
     font-size: 9px;
+}
+
+#faq-content p {
+    font-size: 15px;
+}
+
+.faq-question {
+    width: 100%;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: var(--content);
 }
 
 /*
@@ -173,7 +194,7 @@ https://css-theme.hackclub.dev/
     transition: color 0.3s;
     transition: background-color 0.3s;
     transition: border 0.1s;
-  }
+}
 
   .button-fill:hover {
     text-decoration: none;
@@ -186,9 +207,9 @@ https://css-theme.hackclub.dev/
     border-color: var(--secondary);
     border-radius: 30px;
     font-weight: 900;
+    transition: border-color 0.3s;
     transition: color 0.3s;
     transition: background-color 0.3s;
-    transition: border-color 0.3s;
     transition: border 0.1s;
   }
 
