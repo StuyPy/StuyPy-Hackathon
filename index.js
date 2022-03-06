@@ -68,15 +68,15 @@ function setTheme(darkMode) {
     }
 }
 
-// if (window.matchMedia) {
-//     if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-//         darkMode = true
-//     } else {
-//         darkMode = false
-//     }
-// } else {
-//     darkMode = false
-// }
+if (window.matchMedia) {
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+        darkMode = true
+    } else {
+        darkMode = false
+    }
+} else {
+    darkMode = false
+}
 
 setTheme(darkMode)
 
