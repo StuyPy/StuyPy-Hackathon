@@ -45,14 +45,29 @@ document.querySelectorAll(".on-scroll-animate").forEach(entry => {
 })
 
 /* change stylesheet to corresponding theme */
-function changeTheme() {
+function setTheme(darkMode) {
     if (darkMode) {
-        STYLESHEET.href = "style_light.css"
-        darkMode = false
-    } else {
         STYLESHEET.href = "style_dark.css"
-        darkMode = true
+    } else {
+        STYLESHEET.href = "style_light.css"
     }
+}
+
+if (window.matchMedia) {
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+        darkMode = true
+    } else {
+        darkMode = false
+    }
+} else {
+    darkMode = false
+}
+
+setTheme(darkMode)
+
+function themeToggle() {
+   setTheme(!darkMode)
+   darkMode = !darkMode
 }
 
 /* The navbar and schedule are animated based on scrolling */
