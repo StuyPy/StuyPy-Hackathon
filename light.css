@@ -1,0 +1,48 @@
+:root {
+    --primary: #53abf3;
+    --content: rgba(197, 212, 235, 0.411);
+}
+
+.primary-bg {
+    background: var(--primary);
+}
+
+.navbar-filled {
+    background: var(--primary);
+}
+
+.content-section {
+    background-color: var(--content);
+}
+
+#countdown {
+    background-color: var(--content);
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    filter: invert(100%);
+}
+
+.card-body:hover {   
+    border-color: var(--primary);
+    color: var(--primary); 
+}
+
+.faq-question {
+    background-color: var(--content);
+}
+
+/*
+From HackClub CSS :D
+https://css-theme.hackclub.dev/ 
+*/
+
+.button-fill {
+    background-color: var(--primary);
+}
+
+.button-fill:hover {
+    color: var(--primary);
+    border-color: var(--primary);
+}
