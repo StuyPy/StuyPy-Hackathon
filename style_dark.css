@@ -145,6 +145,16 @@ li .nav-link.active {
     margin: 10px;
 }
 
+#countdown {
+    background-color: var(--content);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.countdown-label {
+    font-size: 9px;
+}
+
 /*
 From HackClub CSS :D
 https://css-theme.hackclub.dev/ 

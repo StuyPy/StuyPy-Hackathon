@@ -13,6 +13,10 @@ var animationChoice = 0
 
 /* CHANGE SPECIFIC DATE */
 const HACKATHON_DATE = new Date(2022, 5, 2, 1, 2, 3).getTime() // june 2nd at 1:02:03 ET
+const DAYS_LEFT = document.getElementById("days-left")
+const HOURS_LEFT = document.getElementById("hours-left")
+const MINUTES_LEFT = document.getElementById("minutes-left")
+const SECONDS_LEFT = document.getElementById("seconds-left")
 
 /*
 IntersecionObserver checks whether an element with the "on-scroll-aniamte" class
@@ -113,11 +117,12 @@ function updateTimer(){
 
     if (timeDiff < 0) {
         clearInterval(intervalID)
-        document.getElementById("#countdown").innerHTML = "" // no more countdown :0
-        return
+        COUNTDOWN.innerHTML = "THE HACKATHON HAS STARTED!" // no more countdown :0
     } else {
-        document.querySelector("#countdown").textContent = 
-        `${timeDiffDays}d:${timeDiffHours}h:${timeDiffMinutes}m:${timeDiffSeconds}s UNTIL THE HACKATHON!`
+        DAYS_LEFT.textContent = `${timeDiffDays}`
+        HOURS_LEFT.textContent = `${timeDiffHours}`
+        MINUTES_LEFT.textContent = `${timeDiffMinutes}`
+        SECONDS_LEFT.textContent = `${timeDiffSeconds}`
     }
 
     
