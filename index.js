@@ -3,7 +3,10 @@ const FRAMES = 9
 const SCHEDULE = document.getElementById("schedule-section")
 const SCHEDULE_IMAGE = document.getElementById("scroll-animation")
 const START_PERCENTAGE = 40
-const STEP = START_PERCENTAGE / FRAMES
+const SNAKE_STEP = START_PERCENTAGE / FRAMES
+const SCHEDULE_ITEMS_STEP = START_PERCENTAGE / 5 // 5 is items in the schedule
+const SCHEDULE_ITEMS = document.querySelectorAll(".schedule-item")
+const SCHEDULE_ITEMS_LEN = SCHEDULE_ITEMS.length
 
 const STYLESHEET = document.getElementById("theme")
 var darkMode = false
@@ -90,6 +93,8 @@ function navbarChange() {
 }
 
 function scheduleAnimate() {
+
+    
     var rect = SCHEDULE.getBoundingClientRect()
     var distanceFromTop = rect.top
     /* percentageScroll indicates how close the schedule element is to the top of the viewport */
@@ -103,13 +108,29 @@ function scheduleAnimate() {
         If the element is at around START_PERCENTAGE or lower, then its current percentageScroll
         determines the animation's frame. This also lets the animation to be reversed 
         */
+
+        // ** snake animation **
         if (percentageScroll <= START_PERCENTAGE) {
             /* Gets the closest frame based on the STEP interval, depending on the current percentageScroll */
-            var currentFrame = Math.floor(FRAMES - (percentageScroll / STEP))
-            if (currentFrame > 8) {
-                currentFrame = 8
+            var currentSnakeFrame = Math.floor(FRAMES - (percentageScroll / SNAKE_STEP))
+            if (currentSnakeFrame > 8) {
+                currentSnakeFrame = 8
             }
-            SCHEDULE_IMAGE.src = `resources/frames/${currentFrame}.png`
+            SCHEDULE_IMAGE.src = `resources/frames/${currentSnakeFrame}.png` 
+        }
+
+        // ** schedule items animation **
+        if (percentageScroll <= START_PERCENTAGE) {
+            /* Gets the closest frame based on the STEP interval, depending on the current percentageScroll */
+            var currentScheduleFrame = Math.floor(SCHEDULE_ITEMS_LEN - (percentageScroll / SCHEDULE_ITEMS_STEP))
+            if (currentScheduleFrame > SCHEDULE_ITEMS_LEN) {
+                currentScheduleFrame = SCHEDULE_ITEMS_LEN
+            }
+
+
+            SCHEDULE_ITEMS[currentScheduleFrame].classList.add("schedule-item-filled")
+            SCHEDULE_ITEMS[currentScheduleFrame].classList.remove("schedule-item-start")
+
         }
     }
 }
