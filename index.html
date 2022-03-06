@@ -32,8 +32,7 @@
     <!-- scroll spy for current section indicator in menu bar -->
     <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0" tabindex="0">
         
-        <!-- MENU BAR -->
-        <!-- menu bar is transparent at first, then changes to opaque after scrolling down-->
+        <!-- MENU BAR is transparent at first, then changes to opaque after scrolling down-->
         <nav id="navbar" class="animate__animated animate__fadeIn px-3 navbar navbar-expand-lg navbar-dark navbar-transparent fixed-top">
             <img src="resources/logos/logo_hackathon.png" height="60">
             <button 
@@ -51,14 +50,17 @@
                     <li class="nav-item">
                         <a class="nav-link text-white fw-bold" href="#about">About</a>
                     </li>
+                    <!-- TODO: add schedule -->
+                    <!--
                     <li class="nav-item">
                         <a class="nav-link text-white fw-bold" href="#schedule">Schedule</a>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link text-white fw-bold" href="#team">Our Team</a>
                     </li>
-                    <!-- TODO: add sponsors later
-                         <li class="nav-item">
+                    <!-- TODO: add sponsors -->
+                    <!--
+                    <li class="nav-item">
                         <a class="nav-link text-white fw-bold" href="#sponsors">Sponsors</a>
                     </li> -->
                     <li class="nav-item">
@@ -74,23 +76,21 @@
         </nav>
 
         <!-- LANDING --> 
-
         <div id="home-top" class="shadow d-flex">
             <img class="animate__animated animate__fadeInDown" id="top-logo" src="resources/logos/logo_hackathon_hd.png">
-            <!-- TODO: add a google form link-->
+            <!-- TODO: add a google form link -->
             <a class="button-fill animate__animated animate__fadeIn" href="form link" target="_blank" rel="noopener noreferrer">Sign Up</a>
         </div>
 
         <div id="main-content" class="fluid-container d-flex flex-column align-items-center">
 
             <!-- ABOUT -->
-
             <div id="about-section" class="d-flex content-section container">
                 <!-- Anchor that is offset for menu links -->
                 <a id="about" class="anchor"></a> 
                 <div>
                     <div class="p-4 fluid-container on-scroll-animate animate__animated">
-                        <h1>What is StuyPy?</h1>
+                        <h1>What is StuyPy?</h1> <hr>
                         <p>
                             StuyPy is a casual, <strong>beginner-friendly</strong> club aiming to teach people with no prior 
                             experience to code in Python, and to create projects while having fun. 
@@ -99,7 +99,7 @@
                         </p>
                     </div>
                     <div class="p-4 fluid-container on-scroll-animate animate__animated">
-                        <h1>The StuyPy-a-Thon</h1>
+                        <h1>The StuyPy-a-Thon</h1> <hr>
                         <p class="pb-4">
                             To better reinforce concepts and allow members to learn even more, We will
                             be hosting <strong>StuyPy's first hackathon!</strong> Show what you've learned so far, and create a project
@@ -111,7 +111,7 @@
                             href="https://stuyactivities.org/stuypy"
                             target="_blank"
                             rel="noopener noreferrer">
-                            Join StuyActivties
+                            Join StuyActivities
                         </a>
                     </div>
                 </div>
@@ -134,29 +134,28 @@
                             <h1 id="seconds-left" class="text-center">88</h1>
                             <p class="countdown-label">sec</p>
                         </div>
-                    </div>
+                    </div> <hr>
                     <p>Until the hackathon!</p>
                 </div>
                 
                 
             </div>
 
-            <!-- SCHEDULE -->
-            <!-- ** TESTING SCROLL ANIMATION (removed because there is no schedule yet) -->
-            <!-- <div id="schedule-section" class="text-center content-section container">
+            <!-- ** SCHEDULE (removed because there is no schedule yet) -->
+            <!-- 
+            <div id="schedule-section" class="text-center content-section container">
                 <a id="schedule" class="anchor"></a>
-                <h1>Schedule</h1>
+                <h1>Schedule</h1> <hr>
                 <p><em>This section will be updated as time passses. Be sure to check back for updates!</em></p>
                 <img id="scroll-animation" rel="preload" src="resources/frames/0.png" alt="">
-            </div> -->
+            </div> 
+            -->
 
-            <!-- CLUB/STAFF -->
-
+            <!-- TEAM -->
             <div id="team-section" class="text-center content-section container">
-                <!-- Anchor that is offset for menu links -->
                 <a id="team" class="anchor"></a>
-                <h1>Our Team</h1>
-                <div id="team-carousel" class="carousel slide" data-bs-ride="carousel">
+                <h1>Our Team</h1> <hr>
+                <div id="team-carousel" class="carousel slide animate__animated on-scroll-fade data-bs-ride="carousel">
 
                     <div class="carousel-inner">
 
@@ -306,23 +305,81 @@
                 </div>
             </div>
 
-            <!-- SPONSORS -->
-
+            <!-- * * SPONSORS (removed because there are no sponsors yet) -->
             <!--
-                * * We can only finish this once we actually have sponsors
             <div id="sponsors-section" class="text-center content-section container">
                 <a id="sponsors" class="anchor"></a>
-                <h1>Sponsors</h1>
+                <h1>Sponsors</h1> <hr>
             </div>
             -->
 
             <!-- FAQ -->
-
             <div id="faq-section" class="text-center content-section container">
                 <!-- Anchor that is offset for menu links -->
                 <a id="faq" class="anchor"></a>
-                <h1>FAQ</h1>
-                <!-- TODO -->
+                <h1>FAQ</h1> <hr>
+                <div id="faq-content" class="d-flex flex-column justify-content-center align-items-center">
+                    <div class="faq-question">
+                        <h4>Who can join?</h4>
+                        <p>
+                            As long as you attend Stuyvesant High School, 
+                            you can join the StuyPy club to participate in the hackathon! 
+                            Just join through StuyActivities, and you can join the hackathon.
+                        </p>
+                    </div>
+                    <div class="faq-question animate__animated on-scroll-fade">
+                        <h4>Do I need to have prior experience to join?</h4>
+                        <p>
+                            You do not need prior experience, but it is advised to have some
+                            basic knowledge. This hackathon is meant to display the knowledge
+                            you've learned, so you should try to have some basic skills before
+                            joining! However, the experience of the hackathon will teach much
+                            more than you might realize.
+                        </p>
+                    </div>
+                    <div class="faq-question animate__animated on-scroll-fade">
+                        <h4>How many people are allowed per team?</h4>
+                        <p>
+                            We allow up to 4 people per team, but you are allowed to work solo as well!
+                        </p>
+                    </div>
+                    <div class="faq-question animate__animated on-scroll-fade">
+                        <h4>Where can I join a team?</h4>
+                        <p>
+                            If you wish to join a team, you can ask members in our Discord server to
+                            form a team! There will also be an option to add your team members when signing up.
+                        </p>
+                    </div>
+                    <div class="faq-question animate__animated on-scroll-fade">
+                        <h4>What are the rewards?</h4>
+                        <p>
+                            <!-- TODO -->
+                            TBD
+                        </p>
+                    </div>
+                    <div class="faq-question animate__animated on-scroll-fade">
+                        <h4>How long will the hackathon be?</h4>
+                        <p>
+                            The hackathon will begin on June 2nd, and will last 48 hours. 
+                            Be sure to check back for the schedule for more information!
+
+                        </p>
+                    </div>
+                    <div class="faq-question animate__animated on-scroll-fade">
+                        <h4>Will this hackathon be in person or virtual?</h4>
+                        <p>
+                            <!-- TODO -->
+                            TBD
+                        </p>
+                    </div>
+                    <div class="faq-question animate__animated on-scroll-fade">
+                        <h4>Where can I sign up?</h4>
+                        <p>
+                            <!-- TODO -->
+                            Google form link goes here
+                        </p>
+                    </div>
+                </div>
             </div>
 
         </div>
