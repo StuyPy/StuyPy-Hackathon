@@ -44,6 +44,21 @@ document.querySelectorAll(".on-scroll-animate").forEach(entry => {
     }
 })
 
+/* FAQ */
+const faqObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("animate__fadeIn")
+        }
+    })
+})
+
+document.querySelectorAll(".on-scroll-fade").forEach(entry => {
+    if (entry) {
+        faqObserver.observe(entry)
+    }
+})
+
 /* change stylesheet to corresponding theme */
 function setTheme(darkMode) {
     if (darkMode) {
@@ -53,15 +68,15 @@ function setTheme(darkMode) {
     }
 }
 
-if (window.matchMedia) {
-    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-        darkMode = true
-    } else {
-        darkMode = false
-    }
-} else {
-    darkMode = false
-}
+// if (window.matchMedia) {
+//     if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+//         darkMode = true
+//     } else {
+//         darkMode = false
+//     }
+// } else {
+//     darkMode = false
+// }
 
 setTheme(darkMode)
 
