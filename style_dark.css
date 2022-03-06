@@ -176,6 +176,55 @@ li .nav-link.active {
     background-color: var(--content);
 }
 
+#schedule-reminder {
+    font-size: 16px;
+}
+
+.schedule-item {
+    padding: 15px;
+    padding-bottom: 5px;
+    margin: 10px;
+}
+
+.schedule-item h4 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.schedule-item p {
+    font-size: 16px;
+}
+
+#schedule-content {
+    margin-top: 2em;
+    padding: 6px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.schedule-item-transparent {
+    animation: fadeOut linear .3s;
+}
+
+.schedule-item-filled {
+    animation: fadeIn linear .3s;
+}
+
+.schedule-item-start {
+    opacity: 0;
+}
+
+
+@keyframes fadeIn {
+    0% {opacity:0}
+    100% {opacity:1}
+}
+
+@keyframes fadeOut {
+    0% {opacity:1}
+    100% {opacity:0}
+}
+
 /*
 From HackClub CSS :D
 https://css-theme.hackclub.dev/ 
@@ -212,35 +261,3 @@ https://css-theme.hackclub.dev/
     transition: background-color 0.3s;
     transition: border 0.1s;
   }
-
-#schedule-content {
-    margin-top: 5em;
-    padding: 6px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.schedule-item-transparent {
-    animation: fadeOut linear .3s;
-}
-
-.schedule-item-filled {
-    animation: fadeIn linear .3s;
-}
-
-.schedule-item-start {
-    opacity: 0;
-}
-
-
-@keyframes fadeIn {
-    0% {opacity:0}
-    100% {opacity:1}
-}
-
-@keyframes fadeOut {
-    0% {opacity:1}
-    100% {opacity:0}
-}
-
-

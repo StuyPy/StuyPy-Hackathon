@@ -147,16 +147,6 @@ function scheduleAnimate() {
 
     }
 
-        // if (schedule_class_list.contains("schedule-item-filled")) {
-        //     schedule_class_list.remove("schedule-item-filled")
-        //     schedule_class_list.add("schedule-item-transparent")
-        // } else if (schedule_class_list.contains("schedule-item-transparent")) {
-        //     schedule_class_list.add("schedule-item-filled")
-        //     schedule_class_list.remove("schedule-item-transparent")
-        // } else {
-        //     schedule_class_list.remove("schedule-item-start")
-        //     schedule_class_list.add("schedule-item-filled")
-        // }      
 }
 
 /* Countdown timer */
