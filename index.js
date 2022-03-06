@@ -11,7 +11,7 @@ var darkMode = false
 const NAVBAR = document.getElementById("navbar")
 var animationChoice = 0
 
-/ ** CHANGE SPECIFIC DATE ** /
+/* CHANGE SPECIFIC DATE */
 const HACKATHON_DATE = new Date(2022, 5, 2, 1, 2, 3).getTime() // june 2nd at 1:02:03 ET
 
 /*
