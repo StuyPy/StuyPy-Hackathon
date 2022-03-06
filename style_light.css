@@ -1,7 +1,8 @@
 :root {
-    --primary: #5eb0f3;
+    --primary: #53abf3;
     --secondary: #bcd2e1;
     --tertiary: #ffcc3d;
+    --content: rgba(197, 212, 235, 0.411);
 }
 
 html {
@@ -59,7 +60,14 @@ li .nav-link.active {
     background-color:rgb(255, 255, 255) !important;
 }
 
+.content-section {
+    padding: 20px;
+    background-color: var(--content);
+    border-radius: 20px;
+}
+
 .card {
+    background-color: rgb(255, 255, 255, 0);
     border: none;
     margin: 1em;
     width: 200px !important;

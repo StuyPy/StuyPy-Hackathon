@@ -5,12 +5,14 @@ const SCHEDULE_IMAGE = document.getElementById("scroll-animation")
 const START_PERCENTAGE = 40
 const STEP = START_PERCENTAGE / FRAMES
 
+const STYLESHEET = document.getElementById("theme")
+var darkMode = false
+
 const NAVBAR = document.getElementById("navbar")
-
-// ** CHANGE SPECIFIC DATE ** //
-const HACKATHON_DATE = new Date(2022, 5, 2, 1, 2, 3).getTime() // june 2nd at 1:02:03 ET
-
 var animationChoice = 0
+
+/ ** CHANGE SPECIFIC DATE ** /
+const HACKATHON_DATE = new Date(2022, 5, 2, 1, 2, 3).getTime() // june 2nd at 1:02:03 ET
 
 /*
 IntersecionObserver checks whether an element with the "on-scroll-aniamte" class
@@ -37,6 +39,17 @@ document.querySelectorAll(".on-scroll-animate").forEach(entry => {
         observer.observe(entry)
     }
 })
+
+/* change stylesheet to corresponding theme */
+function changeTheme() {
+    if (darkMode) {
+        STYLESHEET.href = "style_light.css"
+        darkMode = false
+    } else {
+        STYLESHEET.href = "style_dark.css"
+        darkMode = true
+    }
+}
 
 /* The navbar and schedule are animated based on scrolling */
 window.onscroll = function () { onScroll() }
@@ -89,7 +102,6 @@ var intervalID = setInterval(updateTimer, 1)
 
 
 function updateTimer(){ 
-    console.log("hi")
     var today = new Date().getTime() 
 
     var timeDiff = HACKATHON_DATE - today // time diff in milleseconds

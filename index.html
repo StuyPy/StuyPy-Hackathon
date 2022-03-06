@@ -22,8 +22,9 @@
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         >
-        <link 
-            href="style.css"
+        <link
+            id="theme"
+            href="style_light.css"
             rel="stylesheet"
         > 
     </head>
@@ -33,7 +34,7 @@
         
         <!-- MENU BAR -->
         <!-- menu bar is transparent at first, then changes to opaque after scrolling down-->
-        <nav id="navbar" class="animate__animated animate__fadeIn px-3 navbar navbar-expand-lg navbar-light navbar-transparent fixed-top">
+        <nav id="navbar" class="animate__animated animate__fadeIn px-3 navbar navbar-expand-lg navbar-dark navbar-transparent fixed-top">
             <img src="resources/logos/logo_hackathon.png" height="60">
             <button 
                 class="navbar-toggler" 
@@ -56,11 +57,17 @@
                     <li class="nav-item">
                         <a class="nav-link text-white fw-bold" href="#team">Our Team</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- TODO: add sponsors later
+                         <li class="nav-item">
                         <a class="nav-link text-white fw-bold" href="#sponsors">Sponsors</a>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link text-white fw-bold" href="#faq">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <button onclick="changeTheme()" class="nav-link">
+                            <img id="theme-toggle" src="resources/theme-toggle-icon.png" width="30" height="30">
+                        </button>
                     </li>
                 </ul>
             </div>
@@ -115,14 +122,13 @@
         </div>
 
         <!-- SCHEDULE -->
-        <!-- ** TESTING SCROLL ANIMATION -->
-        <div id="schedule-section" class="text-center content-section fluid-container">
-            <!-- Anchor that is offset for menu links -->
+        <!-- ** TESTING SCROLL ANIMATION (removed because there is no schedule yet) -->
+        <!-- <div id="schedule-section" class="text-center content-section fluid-container">
             <a id="schedule" class="anchor"></a>
             <h1>Schedule</h1>
             <p><em>This section will be updated as time passses. Be sure to check back for updates!</em></p>
             <img id="scroll-animation" rel="preload" src="resources/frames/0.png" alt="">
-        </div>
+        </div> -->
 
         <!-- CLUB/STAFF -->
 
@@ -300,7 +306,7 @@
         </div>
 
         <!-- FOOTER -->
-        
+
         <div id="footer" class="fluid-container primary-bg p-1 justify-content-center">
             <div class="d-flex flex-column">
                 <div class="d-flex justify-content-center">
