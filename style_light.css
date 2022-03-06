@@ -192,11 +192,10 @@ li .nav-link.active {
 }
 
 #schedule-content {
-    margin-top: 5em;
+    margin-top: 2em;
     margin-right: auto;
     margin-left: auto;
 }
-
 
 .schedule-item-transparent {
     animation: fadeOut linear .3s;
