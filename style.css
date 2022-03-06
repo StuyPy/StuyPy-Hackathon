@@ -1,13 +1,22 @@
-body {
-    font-family: "Phantom Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+:root {
+    --primary: #5eb0f3;
+    --secondary: #bcd2e1;
+    --tertiary: #ffcc3d;
 }
 
 html {
     scroll-behavior: smooth;
 }
 
+body {
+    font-family: "Phantom Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
 
-@media only screen and (max-width: 600px) {
+h1 {
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 1000px) {
 
     #about-section {
         flex-direction: column;
@@ -28,20 +37,11 @@ html {
 }
 
 #top-logo {
-    position: absolute;
-    width: 40%;
-}
-
-#about-section {
-    display: flex;
-}
-
-.card {
-    margin: 1em;
+    width: 35%;
 }
 
 .navbar-filled {
-    background: #5eb0f3;
+    background: var(--primary);
     transition: background .5s;
 }
 
@@ -59,6 +59,46 @@ li .nav-link.active {
     background-color:rgb(255, 255, 255) !important;
 }
 
+.card {
+    border: none;
+    margin: 1em;
+    width: 200px !important;
+}
+
+.card-img-top {
+    border-radius: 15px 15px 0 0;
+}
+
+.card-body {
+    color: white;
+    transition: color 0.3s;
+    transition: background-color 0.3s;
+    border-radius: 0 0 15px 15px;
+    transition: border-color 0.3s;
+    transition: border 0.1s;
+}
+
+.card-body:hover {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #0a90fd;
+    color: #0a90fd;
+    background-color: white;
+    transition: color 0.3s;
+    transition: background-color 0.3s;
+    transition: border-color 0.3s;
+    transition: border 0.1s;
+}
+
+.card-text {
+    font-size: 12px !important;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    filter: invert(100%);
+}
+
 .anchor {
     top: -120px;
     position: relative;
@@ -67,15 +107,15 @@ li .nav-link.active {
 }
 
 .primary-bg {
-    background: #5eb0f3;
+    background: var(--primary);
 }
 
 .secondary-bg {
-    background: #bcd2e1;
+    background: var(--secondary);
 }
 
 .tertiary-bg {
-    background: #ffcc3d;
+    background: var(--tertiary);
 }
 
 .spacer {
@@ -88,7 +128,7 @@ li .nav-link.active {
 
 .content-section p {
     margin-top: 10px;
-    font-size: 18px;
+    font-size: 23px;
 }
 
 .social-logo {
@@ -96,15 +136,39 @@ li .nav-link.active {
     margin: 10px;
 }
 
-/* From HackClub CSS :D */
-/* https://css-theme.hackclub.dev/ */
+/*
+From HackClub CSS :D
+https://css-theme.hackclub.dev/ 
+*/
 
 .button-fill {
+    text-decoration: none;
     color: white;
     font-size: 1rem;
-    background-color: #5eb0f3;
+    background-color: var(--primary);
     padding: 15px 20px 15px 20px;
     border: none;
     border-radius: 30px;
     font-weight: 900;
+    transition: border-color 0.3s;
+    transition: color 0.3s;
+    transition: background-color 0.3s;
+    transition: border 0.1s;
+  }
+
+  .button-fill:hover {
+    text-decoration: none;
+    color: var(--primary);
+    font-size: 1rem;
+    background-color: white;
+    padding: 15px 20px 15px 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--primary);
+    border-radius: 30px;
+    font-weight: 900;
+    transition: color 0.3s;
+    transition: background-color 0.3s;
+    transition: border-color 0.3s;
+    transition: border 0.1s;
   }
