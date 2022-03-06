@@ -101,10 +101,12 @@ function updateTimer(){
 
     if (timeDiff < 0) {
         clearInterval(intervalID)
-        document.getElementById("#countdown").innerHTML = "HACKATHON HAS STARTED"
+        document.getElementById("#countdown").innerHTML = "" // no more countdown :0
         return
+    } else {
+        document.querySelector("#countdown").textContent = 
+        `${timeDiffDays}d:${timeDiffHours}h:${timeDiffMinutes}m:${timeDiffSeconds}s UNTIL THE HACKATHON!`
     }
 
-    document.querySelector("#countdown").textContent = 
-    `${timeDiffDays}d:${timeDiffHours}h:${timeDiffMinutes}m:${timeDiffSeconds}s UNTIL THE HACKATHON!`
+    
 }
