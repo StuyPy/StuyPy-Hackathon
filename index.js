@@ -7,6 +7,9 @@ const STEP = START_PERCENTAGE / FRAMES
 
 const NAVBAR = document.getElementById("navbar")
 
+// ** CHANGE SPECIFIC DATE ** //
+const HACKATHON_DATE = new Date(2022, 5, 2, 1, 2, 3).getTime() // june 2nd at 1:02:03 ET
+
 var animationChoice = 0
 
 /*
@@ -79,5 +82,29 @@ function scheduleAnimate() {
     }
 }
 
+/* Countdown timer */
+
+// updates every second
+var intervalID = setInterval(updateTimer, 1)
 
 
+function updateTimer(){ 
+    console.log("hi")
+    var today = new Date().getTime() 
+
+    var timeDiff = HACKATHON_DATE - today // time diff in milleseconds
+
+    var timeDiffDays = Math.floor(timeDiff / (1000 * 60 * 60 * 24))
+    var timeDiffHours = Math.floor((timeDiff % (timeDiffDays / timeDiff)) / (1000 * 60 * 60));
+    var timeDiffSeconds = Math.floor(timeDiff % (1000 * 60) / 1000);
+    var timeDiffMinutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60))
+
+    if (timeDiff < 0) {
+        clearInterval(intervalID)
+        document.getElementById("#countdown").innerHTML = "HACKATHON HAS STARTED"
+        return
+    }
+
+    document.querySelector("#countdown").textContent = 
+    `${timeDiffDays}d:${timeDiffHours}h:${timeDiffMinutes}m:${timeDiffSeconds}s UNTIL THE HACKATHON!`
+}
