@@ -141,15 +141,69 @@
                 
             </div>
 
-            <!-- ** SCHEDULE (removed because there is no schedule yet) -->
-            <!-- 
+            <!-- SCHEDULE -->
             <div id="schedule-section" class="text-center content-section container">
                 <a id="schedule" class="anchor"></a>
-                <h1>Schedule</h1> <hr>
+
+                <!-- 
+                schedule-content:
+                ______________________
+                |item1 | snek |      |
+                |      | snek | item2|
+                |item3 | snek |      |
+                |      | snek | item4|
+                |_item5|_snek_|______|
+             -->
+             
+                <h1>Schedule</h1>
                 <p><em>This section will be updated as time passses. Be sure to check back for updates!</em></p>
-                <img id="scroll-animation" rel="preload" src="resources/frames/0.png" alt="">
-            </div> 
-            -->
+
+                <table id="schedule-content">
+                    <tr>
+                       <td class="schedule-item schedule-item-start">
+                           <h4>Hackathon Begins</h4> 
+                           <p>6/2 3:00pm</p>
+                       </td>
+                       <td rowspan="5">
+                           <img id="scroll-animation" rel="preload" src="resources/frames/0.png" alt="">
+                       </td>
+                       <td></td>
+                    </tr>
+   
+                    <tr>
+                       <td></td>
+                       <td class="schedule-item schedule-item-start">
+                          <h4>Opening Ceremony</h4> 
+                          <p>6/2 3:00pm</p>
+                      </td>
+                    </tr>
+   
+                    <tr>
+                       <td class="schedule-item schedule-item-start">
+                           <h4>TDB activty</h4> 
+                           <p>6/2 5:00pm</p>
+                       </td>
+                       <td></td>
+                    </tr>
+   
+                    <tr>
+                       <td></td>
+                       <td class="schedule-item schedule-item-start">
+                           <h4>TBD activity</h4> 
+                           <p>6/2 3:00pm</p>
+                       </td>
+                    </tr>
+   
+                    <tr>
+                       <td class="schedule-item schedule-item-start">
+                           <h4>Hackathon Ends</h4> 
+                           <p>TBD</p>
+                       </td>
+   
+                    </tr>
+                </table>   
+
+            </div>
 
             <!-- TEAM -->
             <div id="team-section" class="text-center content-section container">
