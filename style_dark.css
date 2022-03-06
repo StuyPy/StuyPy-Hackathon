@@ -63,6 +63,7 @@ li .nav-link.active {
 }
 
 .content-section {
+    margin: 20%;
     padding: 20px;
     background-color: var(--content);
     border-radius: 20px;

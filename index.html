@@ -81,246 +81,250 @@
             <a class="button-fill animate__animated animate__fadeIn" href="form link" target="_blank" rel="noopener noreferrer">Sign Up</a>
         </div>
 
-        <!-- ABOUT -->
+        <div id="main-content" class="fluid-container d-flex flex-column align-items-center">
 
-        <div id="about-section" class="d-flex content-section fluid-container">
-            <!-- Anchor that is offset for menu links -->
-            <a id="about" class="anchor"></a> 
-            <div>
-                <div class="p-4 fluid-container on-scroll-animate animate__animated">
-                    <h1>What is StuyPy?</h1>
-                    <p>
-                        StuyPy is a casual, <strong>beginner-friendly</strong> club aiming to teach people with no prior 
-                        experience to code in Python, and to create projects while having fun. 
-                        We additionally want to introduce members to Python, and provide them with
-                        a strong foundation in the field of computer science from the ground up. 
-                    </p>
+            <!-- ABOUT -->
+
+            <div id="about-section" class="d-flex content-section container">
+                <!-- Anchor that is offset for menu links -->
+                <a id="about" class="anchor"></a> 
+                <div>
+                    <div class="p-4 fluid-container on-scroll-animate animate__animated">
+                        <h1>What is StuyPy?</h1>
+                        <p>
+                            StuyPy is a casual, <strong>beginner-friendly</strong> club aiming to teach people with no prior 
+                            experience to code in Python, and to create projects while having fun. 
+                            We additionally want to introduce members to Python, and provide them with
+                            a strong foundation in the field of computer science from the ground up. 
+                        </p>
+                    </div>
+                    <div class="p-4 fluid-container on-scroll-animate animate__animated">
+                        <h1>The StuyPy-a-Thon</h1>
+                        <p class="pb-4">
+                            To better reinforce concepts and allow members to learn even more, We will
+                            be hosting <strong>StuyPy's first hackathon!</strong> Show what you've learned so far, and create a project
+                            which you can be proud of! This hackathon is open to <em>all members</em> (anyone can join 
+                            at the StuyActivties page), where you can work with others or solo if you wish.
+                        </p> 
+                        <a 
+                            class="button-fill animate__animated animate__fadeIn" 
+                            href="https://stuyactivities.org/stuypy"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            Join StuyActivties
+                        </a>
+                    </div>
                 </div>
-                <div class="p-4 fluid-container on-scroll-animate animate__animated">
-                    <h1>The StuyPy-a-Thon</h1>
-                    <p class="pb-4">
-                        To better reinforce concepts and allow members to learn even more, We will
-                        be hosting <strong>StuyPy's first hackathon!</strong> Show what you've learned so far, and create a project
-                        which you can be proud of! This hackathon is open to <em>all members</em> (anyone can join 
-                        at the StuyActivties page), where you can work with others or solo if you wish.
-                    </p> 
-                    <a 
-                        class="button-fill animate__animated animate__fadeIn" 
-                        href="https://stuyactivities.org/stuypy"
-                        target="_blank"
-                        rel="noopener noreferrer">
-                        Join StuyActivties
+                
+                <div id="countdown" class="animate__animated on-scroll-animate d-flex flex-column justify-content-center text-center">
+                    <div class="d-flex justify-content-center text-center">
+                        <div class="p-2 d-flex justify-content-center flex-column">
+                            <h1 id="days-left" class="text-center">88</h1>
+                            <p class="countdown-label">days</p>
+                        </div>
+                        <div class="p-2 d-flex justify-content-center flex-column">
+                            <h1 id="hours-left" class="text-center">88</h1>
+                            <p class="countdown-label">hr</p>
+                        </div>
+                        <div class="p-2 d-flex justify-content-center flex-column">
+                            <h1 id="minutes-left" class="text-center">88</h1>
+                            <p class="countdown-label">min</p>
+                        </div>
+                        <div class="p-2 d-flex justify-content-center flex-column">
+                            <h1 id="seconds-left" class="text-center">88</h1>
+                            <p class="countdown-label">sec</p>
+                        </div>
+                    </div>
+                    <p>Until the hackathon!</p>
+                </div>
+                
+                
+            </div>
+
+            <!-- SCHEDULE -->
+            <!-- ** TESTING SCROLL ANIMATION (removed because there is no schedule yet) -->
+            <!-- <div id="schedule-section" class="text-center content-section container">
+                <a id="schedule" class="anchor"></a>
+                <h1>Schedule</h1>
+                <p><em>This section will be updated as time passses. Be sure to check back for updates!</em></p>
+                <img id="scroll-animation" rel="preload" src="resources/frames/0.png" alt="">
+            </div> -->
+
+            <!-- CLUB/STAFF -->
+
+            <div id="team-section" class="text-center content-section container">
+                <!-- Anchor that is offset for menu links -->
+                <a id="team" class="anchor"></a>
+                <h1>Our Team</h1>
+                <div id="team-carousel" class="carousel slide" data-bs-ride="carousel">
+
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item active">
+                            <div class="card-container fluid-container d-flex flex-wrap justify-content-center align-items-center">
+
+                                <div id="anthony" class="card">
+                                    <img src="resources/team/no-pic.jpg" class="card-img-top" alt="Anthony Chen">
+                                    <div class="card-body primary-bg">
+                                        <h5 class="card-title">Anthony<br>Chen</h5>
+                                        <p class="card-text">
+                                            Organizer <br>
+                                            Webmaster
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div id="zidane" class="card">
+                                    <img src="resources/team/no-pic.jpg" class="card-img-top" alt="Zidane Karim">
+                                    <div class="card-body primary-bg">
+                                        <h5 class="card-title">Zidane<br>Karim</h5>
+                                        <p class="card-text">
+                                            Organizer<br> <br>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div id="shaurya" class="card">
+                                    <img src="resources/team/no-pic.jpg" class="card-img-top" alt="Shaurya Sen">
+                                    <div class="card-body primary-bg">
+                                        <h5 class="card-title">Shaurya<br>Sen</h5>
+                                        <p class="card-text">
+                                            Organizer <br>
+                                            Webmaster
+                                        </p>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="card-container fluid-container flex-wrap d-flex justify-content-center align-items-center">
+                                
+                                <div id="sudipta" class="card">
+                                    <img src="resources/team/no-pic.jpg" class="card-img-top" alt="Anthony Chen">
+                                    <div class="card-body primary-bg">
+                                        <h5 class="card-title">Sudipta<br>Chakraborty</h5>
+                                        <p class="card-text">
+                                            Webmaster <br>
+                                            Teacher Assistant
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div id="gabriel" class="card">
+                                    <img src="resources/team/no-pic.jpg" class="card-img-top" alt="Anthony Chen">
+                                    <div class="card-body primary-bg">
+                                        <h5 class="card-title">Gabriel<br>Thompson</h5>
+                                        <p class="card-text">
+                                            Teacher Assistant <br> <br>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div id="konstantin" class="card">
+                                    <img src="resources/team/no-pic.jpg" class="card-img-top" alt="Anthony Chen">
+                                    <div class="card-body primary-bg">
+                                        <h5 class="card-title">Konstantin<br>Astafurov</h5>
+                                        <p class="card-text">
+                                            Teacher Assistant <br> <br>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="card-container fluid-container d-flex flex-wrap justify-content-center align-items-center">
+                            
+                                <div id="rafia" class="card">
+                                    <img src="resources/team/no-pic.jpg" class="card-img-top" alt="Anthony Chen">
+                                    <div class="card-body primary-bg">
+                                        <h5 class="card-title">Rafia<br>Islam</h5>
+                                        <p class="card-text">
+                                            Public Relations / Outreach <br> <br>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div id="ankki" class="card">
+                                    <img src="resources/team/no-pic.jpg" class="card-img-top" alt="Anthony Chen">
+                                    <div class="card-body primary-bg">
+                                        <h5 class="card-title">Ankki<br>Dong</h5>
+                                        <p class="card-text">
+                                            Public Relations / Outreach <br> <br>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div id="julian" class="card">
+                                    <img src="resources/team/no-pic.jpg" class="card-img-top" alt="Anthony Chen">
+                                    <div class="card-body primary-bg">
+                                        <h5 class="card-title">Julian<br>Huang</h5>
+                                        <p class="card-text">
+                                            Public Relations / Outreach <br> <br>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="card-container fluid-container d-flex flex-wrap justify-content-center align-items-center">
+
+                                <div id="kaitlin" class="card">
+                                    <img src="resources/team/no-pic.jpg" class="card-img-top" alt="Anthony Chen">
+                                    <div class="card-body primary-bg">
+                                        <h5 class="card-title">Kwan<br>Lin Tan</h5>
+                                        <p class="card-text">
+                                            Public Relations / Outreach <br> <br>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div id="intia" class="card">
+                                    <img src="resources/team/no-pic.jpg" class="card-img-top" alt="Anthony Chen">
+                                    <div class="card-body primary-bg">
+                                        <h5 class="card-title">Intia<br>Ibnah</h5>
+                                        <p class="card-text">
+                                            Public Relations / Outreach <br> <br>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <a class="carousel-control-prev" href="#team-carousel" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#team-carousel" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
                     </a>
                 </div>
             </div>
-            
-            <div id="countdown" class="animate__animated on-scroll-animate d-flex flex-column justify-content-center text-center">
-                <div class="d-flex justify-content-center text-center">
-                    <div class="p-2 d-flex justify-content-center flex-column">
-                        <h1 id="days-left" class="text-center">88</h1>
-                        <p class="countdown-label">days</p>
-                    </div>
-                    <div class="p-2 d-flex justify-content-center flex-column">
-                        <h1 id="hours-left" class="text-center">88</h1>
-                        <p class="countdown-label">hr</p>
-                    </div>
-                    <div class="p-2 d-flex justify-content-center flex-column">
-                        <h1 id="minutes-left" class="text-center">88</h1>
-                        <p class="countdown-label">min</p>
-                    </div>
-                    <div class="p-2 d-flex justify-content-center flex-column">
-                        <h1 id="seconds-left" class="text-center">88</h1>
-                        <p class="countdown-label">sec</p>
-                    </div>
-                </div>
-                <p>Until the hackathon!</p>
+
+            <!-- SPONSORS -->
+
+            <!--
+                * * We can only finish this once we actually have sponsors
+            <div id="sponsors-section" class="text-center content-section container">
+                <a id="sponsors" class="anchor"></a>
+                <h1>Sponsors</h1>
             </div>
-            
-            
-        </div>
+            -->
 
-        <!-- SCHEDULE -->
-        <!-- ** TESTING SCROLL ANIMATION (removed because there is no schedule yet) -->
-        <!-- <div id="schedule-section" class="text-center content-section fluid-container">
-            <a id="schedule" class="anchor"></a>
-            <h1>Schedule</h1>
-            <p><em>This section will be updated as time passses. Be sure to check back for updates!</em></p>
-            <img id="scroll-animation" rel="preload" src="resources/frames/0.png" alt="">
-        </div> -->
+            <!-- FAQ -->
 
-        <!-- CLUB/STAFF -->
-
-        <div id="team-section" class="text-center content-section fluid-container">
-            <!-- Anchor that is offset for menu links -->
-            <a id="team" class="anchor"></a>
-            <h1>Our Team</h1>
-            <div id="team-carousel" class="carousel slide" data-bs-ride="carousel">
-
-                <div class="carousel-inner">
-
-                    <div class="carousel-item active">
-                        <div class="card-container fluid-container d-flex flex-wrap justify-content-center align-items-center">
-
-                            <div id="anthony" class="card">
-                                <img src="resources/team/no-pic.jpg" class="card-img-top" alt="Anthony Chen">
-                                <div class="card-body primary-bg">
-                                    <h5 class="card-title">Anthony<br>Chen</h5>
-                                    <p class="card-text">
-                                        Organizer <br>
-                                        Webmaster
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div id="zidane" class="card">
-                                <img src="resources/team/no-pic.jpg" class="card-img-top" alt="Zidane Karim">
-                                <div class="card-body primary-bg">
-                                    <h5 class="card-title">Zidane<br>Karim</h5>
-                                    <p class="card-text">
-                                        Organizer<br> <br>
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div id="shaurya" class="card">
-                                <img src="resources/team/no-pic.jpg" class="card-img-top" alt="Shaurya Sen">
-                                <div class="card-body primary-bg">
-                                    <h5 class="card-title">Shaurya<br>Sen</h5>
-                                    <p class="card-text">
-                                        Organizer <br>
-                                        Webmaster
-                                    </p>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="carousel-item">
-                        <div class="card-container fluid-container flex-wrap d-flex justify-content-center align-items-center">
-                            
-                            <div id="sudipta" class="card">
-                                <img src="resources/team/no-pic.jpg" class="card-img-top" alt="Anthony Chen">
-                                <div class="card-body primary-bg">
-                                    <h5 class="card-title">Sudipta<br>Chakraborty</h5>
-                                    <p class="card-text">
-                                        Webmaster <br>
-                                        Teacher Assistant
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div id="gabriel" class="card">
-                                <img src="resources/team/no-pic.jpg" class="card-img-top" alt="Anthony Chen">
-                                <div class="card-body primary-bg">
-                                    <h5 class="card-title">Gabriel<br>Thompson</h5>
-                                    <p class="card-text">
-                                        Teacher Assistant <br> <br>
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div id="konstantin" class="card">
-                                <img src="resources/team/no-pic.jpg" class="card-img-top" alt="Anthony Chen">
-                                <div class="card-body primary-bg">
-                                    <h5 class="card-title">Konstantin<br>Astafurov</h5>
-                                    <p class="card-text">
-                                        Teacher Assistant <br> <br>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="carousel-item">
-                        <div class="card-container fluid-container d-flex flex-wrap justify-content-center align-items-center">
-                        
-                            <div id="rafia" class="card">
-                                <img src="resources/team/no-pic.jpg" class="card-img-top" alt="Anthony Chen">
-                                <div class="card-body primary-bg">
-                                    <h5 class="card-title">Rafia<br>Islam</h5>
-                                    <p class="card-text">
-                                        Public Relations / Outreach <br> <br>
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div id="ankki" class="card">
-                                <img src="resources/team/no-pic.jpg" class="card-img-top" alt="Anthony Chen">
-                                <div class="card-body primary-bg">
-                                    <h5 class="card-title">Ankki<br>Dong</h5>
-                                    <p class="card-text">
-                                        Public Relations / Outreach <br> <br>
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div id="julian" class="card">
-                                <img src="resources/team/no-pic.jpg" class="card-img-top" alt="Anthony Chen">
-                                <div class="card-body primary-bg">
-                                    <h5 class="card-title">Julian<br>Huang</h5>
-                                    <p class="card-text">
-                                        Public Relations / Outreach <br> <br>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="carousel-item">
-                        <div class="card-container fluid-container d-flex flex-wrap justify-content-center align-items-center">
-
-                            <div id="kaitlin" class="card">
-                                <img src="resources/team/no-pic.jpg" class="card-img-top" alt="Anthony Chen">
-                                <div class="card-body primary-bg">
-                                    <h5 class="card-title">Kwan<br>Lin Tan</h5>
-                                    <p class="card-text">
-                                        Public Relations / Outreach <br> <br>
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div id="intia" class="card">
-                                <img src="resources/team/no-pic.jpg" class="card-img-top" alt="Anthony Chen">
-                                <div class="card-body primary-bg">
-                                    <h5 class="card-title">Intia<br>Ibnah</h5>
-                                    <p class="card-text">
-                                        Public Relations / Outreach <br> <br>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <a class="carousel-control-prev" href="#team-carousel" role="button" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#team-carousel" role="button" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </a>
+            <div id="faq-section" class="text-center content-section container">
+                <!-- Anchor that is offset for menu links -->
+                <a id="faq" class="anchor"></a>
+                <h1>FAQ</h1>
+                <!-- TODO -->
             </div>
-        </div>
 
-        <!-- SPONSORS -->
-
-        <!--
-            * * We can only finish this once we actually have sponsors
-        <div id="sponsors-section" class="text-center content-section fluid-container">
-            <a id="sponsors" class="anchor"></a>
-            <h1>Sponsors</h1>
-        </div>
-        -->
-
-        <!-- FAQ -->
-
-        <div id="faq-section" class="text-center content-section fluid-container">
-            <!-- Anchor that is offset for menu links -->
-            <a id="faq" class="anchor"></a>
-            <h1>FAQ</h1>
-            <!-- TODO -->
         </div>
 
         <!-- FOOTER -->
