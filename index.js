@@ -65,9 +65,9 @@ document.querySelectorAll(".on-scroll-fade").forEach(entry => {
 /* change stylesheet to corresponding theme */
 function setTheme(darkMode) {
     if (darkMode) {
-        STYLESHEET.href = "style_dark.css"
+        STYLESHEET.href = "dark.css"
     } else {
-        STYLESHEET.href = "style_light.css"
+        STYLESHEET.href = "light.css"
     }
 }
 
