@@ -120,19 +120,28 @@ function scheduleAnimate() {
         }
 
         // ** schedule items animation **
-        if (percentageScroll <= START_PERCENTAGE) {
-            /* Gets the closest frame based on the STEP interval, depending on the current percentageScroll */
-            var currentScheduleFrame = Math.floor(SCHEDULE_ITEMS_LEN - (percentageScroll / SCHEDULE_ITEMS_STEP))
-            if (currentScheduleFrame > SCHEDULE_ITEMS_LEN) {
-                currentScheduleFrame = SCHEDULE_ITEMS_LEN
-            }
-
-
-            SCHEDULE_ITEMS[currentScheduleFrame].classList.add("schedule-item-filled")
-            SCHEDULE_ITEMS[currentScheduleFrame].classList.remove("schedule-item-start")
-
+        
+        /* Gets the closest frame based on the STEP interval, depending on the current percentageScroll */
+        var currentScheduleFrame = Math.floor(SCHEDULE_ITEMS_LEN - (percentageScroll / SCHEDULE_ITEMS_STEP))
+        if (currentScheduleFrame > SCHEDULE_ITEMS_LEN) {
+            currentScheduleFrame = SCHEDULE_ITEMS_LEN
         }
+
+        SCHEDULE_ITEMS[currentScheduleFrame].classList.add("schedule-item-filled")
+        SCHEDULE_ITEMS[currentScheduleFrame].classList.remove("schedule-item-start")
+
     }
+
+        // if (schedule_class_list.contains("schedule-item-filled")) {
+        //     schedule_class_list.remove("schedule-item-filled")
+        //     schedule_class_list.add("schedule-item-transparent")
+        // } else if (schedule_class_list.contains("schedule-item-transparent")) {
+        //     schedule_class_list.add("schedule-item-filled")
+        //     schedule_class_list.remove("schedule-item-transparent")
+        // } else {
+        //     schedule_class_list.remove("schedule-item-start")
+        //     schedule_class_list.add("schedule-item-filled")
+        // }      
 }
 
 /* Countdown timer */
