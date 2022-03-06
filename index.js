@@ -5,8 +5,10 @@ const SCHEDULE_IMAGE = document.getElementById("scroll-animation")
 const START_PERCENTAGE = 40
 const STEP = START_PERCENTAGE / FRAMES
 
-const NAVBAR = document.getElementById("navbar")
+const STYLESHEET = document.getElementById("theme")
+var darkMode = false
 
+const NAVBAR = document.getElementById("navbar")
 var animationChoice = 0
 
 /*
@@ -34,6 +36,17 @@ document.querySelectorAll(".on-scroll-animate").forEach(entry => {
         observer.observe(entry)
     }
 })
+
+/* change stylesheet to corresponding theme */
+function changeTheme() {
+    if (darkMode) {
+        STYLESHEET.href = "style_light.css"
+        darkMode = false
+    } else {
+        STYLESHEET.href = "style_dark.css"
+        darkMode = true
+    }
+}
 
 /* The navbar and schedule are animated based on scrolling */
 window.onscroll = function () { onScroll() }
