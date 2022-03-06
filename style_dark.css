@@ -191,3 +191,10 @@ https://css-theme.hackclub.dev/
     transition: border-color 0.3s;
     transition: border 0.1s;
   }
+
+  #schedule-content {
+    margin-top: 5em;
+    padding: 6px;
+    margin-right: auto;
+    margin-left: auto;
+}
