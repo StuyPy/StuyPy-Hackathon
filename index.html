@@ -23,10 +23,6 @@
             href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         >
         <link
-            href="style.css"
-            rel="stylesheet"
-        >
-        <link
             id="theme"
             href="style_light.css"
             rel="stylesheet"
@@ -38,7 +34,7 @@
         
         <!-- MENU BAR is transparent at first, then changes to opaque after scrolling down-->
         <nav id="navbar" class="animate__animated animate__fadeIn px-3 navbar navbar-expand-lg navbar-dark navbar-transparent fixed-top">
-            <img src="resources/logos/logo_hackathon.png" height="60">
+            <img src="resources/logos/logo_hackathon.png" height="60" alt="StuyPy-Logo">
             <button 
                 class="navbar-toggler" 
                 type="button" 
@@ -70,7 +66,7 @@
                     </li>
                     <li class="nav-item">
                         <button onclick="themeToggle()" class="nav-link">
-                            <img id="theme-toggle" src="resources/theme-toggle-icon.png" width="30" height="30">
+                            <img id="theme-toggle" src="resources/theme-toggle-icon.png" alt="StuyPy-Logo" width="30" height="30">
                         </button>
                     </li>
                 </ul>
@@ -79,9 +75,9 @@
 
         <!-- LANDING --> 
         <div id="home-top" class="shadow d-flex">
-            <img class="animate__animated animate__fadeInDown" id="top-logo" src="resources/logos/logo_hackathon_hd.png">
+            <img class="animate__animated animate__fadeInDown" id="top-logo" src="resources/logos/logo_hackathon_hd.png" alt="StuyPy-Logo">
             <!-- TODO: add a google form link -->
-            <a class="button-fill animate__animated animate__fadeIn" href="form link" target="_blank" rel="noopener noreferrer">Sign Up</a>
+            <a class="button-fill animate__animated animate__fadeIn" href="form-link" target="_blank" rel="noopener noreferrer">Sign Up</a>
         </div>
 
         <div id="main-content" class="fluid-container d-flex flex-column align-items-center">
@@ -164,7 +160,7 @@
                     <tr>
                        <td class="schedule-item schedule-item-start content-section">
                            <h4>Hackathon Begins</h4> 
-                           <p>6/4 9:00 AM EST</p>
+                           <p>6/3 3:00pm</p>
                        </td>
                        <td rowspan="5">
                            <img id="scroll-animation" rel="preload" src="resources/frames/0.png" alt="schedule">
@@ -176,14 +172,14 @@
                        <td></td>
                        <td class="schedule-item schedule-item-start content-section">
                           <h4>Opening Ceremony</h4> 
-                          <p>6/4 9:05 AM EST</p>
+                          <p>6/3 3:00pm</p>
                       </td>
                     </tr>
    
                     <tr>
                        <td class="schedule-item schedule-item-start content-section">
                            <h4>TBD activty</h4> 
-                           <p>6/4 3:00 PM EST</p>
+                           <p>6/3 5:00pm</p>
                        </td>
                        <td></td>
                     </tr>
@@ -192,15 +188,17 @@
                        <td></td>
                        <td class="schedule-item schedule-item-start content-section">
                            <h4>TBD activity</h4> 
-                           <p>6/4 5:00 PM EST</p>
+                           <p>6/3 3:00pm</p>
                        </td>
                     </tr>
    
                     <tr>
                        <td class="schedule-item schedule-item-start content-section">
                            <h4>Hackathon Ends</h4> 
-                           <p>6/5 9:00 PM EST</p>
-                       </td>
+                           <p>6/5 3:00pm</p>
+                        </td>
+
+                        <td></td>
    
                     </tr>
                 </table>   
@@ -211,7 +209,7 @@
             <div id="team-section" class="text-center content-section container">
                 <a id="team" class="anchor"></a>
                 <h1>Our Team</h1> <hr>
-                <div id="team-carousel" class="carousel slide animate__animated on-scroll-fade data-bs-ride="carousel">
+                <div id="team-carousel" class="carousel slide animate__animated on-scroll-fade " data-bs-ride="carousel">
 
                     <div class="carousel-inner">
 
@@ -416,7 +414,7 @@
                     <div class="faq-question animate__animated on-scroll-fade">
                         <h4>How long will the hackathon be?</h4>
                         <p>
-                            The hackathon will begin on June 4th, and will last 36 hours. 
+                            The hackathon will begin on June 3rd, and will last 48 hours. 
                             Be sure to check back for the schedule for more information!
 
                         </p>
@@ -454,12 +452,6 @@
                     <a href="https://stuyactivities.org/stuypy" target="_blank" rel="noopener noreferrer">
                         <img class="social-logo" src="resources/logos/socials/stuyact.png" alt="stuy activities">
                     </a>
-                    <a href="https://github.com/StuyPy" target="_blank" rel="noopener noreferrer">
-                        <img class="social-logo" src="resources/logos/socials/github.png" alt="github">
-                    </a>
-                    <a href="https://hackclub.com/" target="_blank" rel="noopener noreferrer">
-                        <img class="social-logo" src="resources/logos/socials/hackclub.png" alt="hackclub">
-                    </a>
                 </div>
                 <p class="text-white text-center">&copy; 2022 StuyPy. All rights reserved.</p>
             </div>
@@ -476,6 +468,6 @@
             integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
             crossorigin="anonymous">
         </script>
-        <script type="text/javascript" src="index.js"></script>
+        <script src="index.js"></script>
     </body>
 </html>
