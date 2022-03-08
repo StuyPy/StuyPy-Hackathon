@@ -71,6 +71,7 @@ li .nav-link.active {
 }
 
 #countdown {
+    width: 100%;
     border-radius: 20px;
     padding: 10px;
 }

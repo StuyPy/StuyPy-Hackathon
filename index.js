@@ -169,10 +169,10 @@ function updateTimer(){
         clearInterval(intervalID)
         COUNTDOWN.innerHTML = "THE HACKATHON HAS STARTED!" // no more countdown :0
     } else {
-        DAYS_LEFT.textContent = `${timeDiffDays}`
-        HOURS_LEFT.textContent = `${timeDiffHours}`
-        MINUTES_LEFT.textContent = `${timeDiffMinutes}`
-        SECONDS_LEFT.textContent = `${timeDiffSeconds}`
+        DAYS_LEFT.textContent = (timeDiffDays > 9) ? `${timeDiffDays}` : `${"0" + timeDiffDays}`
+        HOURS_LEFT.textContent = (timeDiffHours > 9) ? `${timeDiffHours}` : `${"0" + timeDiffHours}`
+        MINUTES_LEFT.textContent = (timeDiffMinutes > 9) ? `${timeDiffMinutes}` : `${"0" + timeDiffMinutes}`
+        SECONDS_LEFT.textContent = (timeDiffSeconds > 9) ? `${timeDiffSeconds}` : `${"0" + timeDiffSeconds}`
     }
 
     
