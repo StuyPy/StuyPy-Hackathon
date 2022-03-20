@@ -1,16 +1,286 @@
-html,
+:root {
+  --font: #212529;
+  --background: #FFFFFF;
+  --primary: #53abf3;
+  --secondary: #2e96eb;
+  --content: rgba(197, 212, 235, 0.411);
+}
+
+[data-theme="dark"] {
+  --font: #FFFFFF;
+  --background: rgb(46, 46, 46);
+  --primary: rgb(30, 31, 34);
+  --secondary: #2e96eb;
+  --content: rgba(77, 89, 107, 0.411);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Phantom Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: var(--background) !important;
+  color: var(--font) !important;
 }
 
-a {
-  color: inherit;
+h1 {
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 1000px) {
+
+  #about-section {
+      flex-direction: column;
+  }
+
+}
+
+.navbar-filled {
+  transition: background .5s;
+}
+
+.navbar-transparent {
+  background: none;
+  transition: background .5s;
+}
+
+li .nav-link {
+  padding: 15px !important;
+}
+
+li .nav-link.active {
+  color:#0a90fd !important;
+  background-color:rgb(255, 255, 255) !important;
+}
+
+#home-top {
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../public/resources/landing_image.png");
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#top-logo {
+  height: 35%;
+  width: 35%;
+}
+
+.anchor {
+  top: -120px;
+  position: relative;
+  display: block;
+  visibility: hidden;
+}
+
+.content-section {
+  padding: 20px;
+  margin: 2em;
+  border-radius: 20px;
+}
+
+.content-section p {
+  margin-top: 10px;
+  font-size: 23px;
+}
+
+#countdown {
+  width: 100%;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.countdown-label {
+  font-size: 9px;
+}
+
+#schedule-reminder {
+  font-size: 16px;
+}
+
+.schedule-item {
+  padding: 15px;
+  padding-bottom: 5px;
+  margin: 10px;
+}
+
+.schedule-item h4 {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.schedule-item p {
+  font-size: 16px;
+}
+
+#schedule-content {
+  margin-top: 2em;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.schedule-item-transparent {
+  animation: fadeOut linear .3s;
+}
+
+.schedule-item-filled {
+  animation: fadeIn linear .3s;
+}
+
+.schedule-item-start {
+  opacity: 0;
+}
+
+.social-logo {
+  width: 30px;
+  margin: 10px;
+  transition: transform 0.3s;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0}
+  100% {opacity:1}
+}
+
+@keyframes fadeOut {
+  0% {opacity:1}
+  100% {opacity:0}
+}
+
+.card {
+  background-color: rgb(255, 255, 255, 0);
+  border: none;
+  margin: 1em;
+  width: 200px !important;
+}
+
+.card-img-top {
+  border-radius: 15px 15px 0 0;
+}
+
+.card-body {
+  color: white;
+  border-radius: 0 0 15px 15px;
+  transition: transform 0.3s;
+  transition: color 0.3s;
+  transition: background-color 0.3s;
+  transition: border-color 0.3s;
+  transition: border 0.1s;
+}
+
+.card-body:hover {
+  transform: scale(1.05);
+  border-style: solid;
+  border-width: 2px;
+  background-color: white;
+  transition: transform 0.3s;
+  transition: color 0.3s;
+  transition: background-color 0.3s;
+  transition: border-color 0.3s;
+  transition: border 0.1s;
+}
+
+.card-text {
+  font-size: 12px !important;
+}
+
+.faq-question {
+  width: 100%;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+#faq-content p {
+  font-size: 15px;
+}
+
+.social-logo:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s;
+}
+
+/*
+From HackClub CSS :D
+https://css-theme.hackclub.dev/ 
+*/
+
+.button-fill {
   text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  padding: 15px 20px 15px 20px;
+  border: none;
+  border-radius: 30px;
+  font-weight: 900;
+  transition: border-color 0.3s;
+  transition: color 0.3s;
+  transition: background-color 0.3s;
+  transition: border 0.1s;
 }
 
-* {
-  box-sizing: border-box;
+.button-fill:hover {
+  text-decoration: none;
+  font-size: 1rem;
+  background-color: white;
+  padding: 15px 20px 15px 20px;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 30px;
+  font-weight: 900;
+  transition: border-color 0.3s;
+  transition: color 0.3s;
+  transition: background-color 0.3s;
+  transition: border 0.1s;
+}
+
+/* THEMING */
+
+body {
+  background-color: var(--background);
+  color: white;
+}
+
+.primary-bg {
+  background: var(--primary);
+}
+
+.secondary-bg {
+  background: var(--secondary);
+}
+
+.navbar-filled {
+  background: var(--primary);
+}
+
+.content-section {
+  background-color: var(--content);
+}
+
+#countdown {
+  background-color: var(--content);
+}
+
+.card-body:hover {
+  border-color: var(--secondary);
+  color: var(--secondary);
+}
+
+
+.faq-question {
+  background-color: var(--content);
+}
+
+.button-fill {
+  background-color: var(--secondary);
+}
+
+.button-fill:hover {
+  color: var(--secondary);
+  border-color: var(--secondary);
 }
