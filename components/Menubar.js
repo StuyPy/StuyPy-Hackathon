@@ -22,7 +22,7 @@ export default function Menubar() {
     //     }, [])
 
     return (
-        <nav id="navbar" className="animate__animated animate__fadeIn px-3 navbar navbar-expand-lg navbar-dark navbar-transparent fixed-top">
+        <nav id="navbar" className="animate__animated animate__fadeIn px-3 navbar navbar-expand-lg navbar-dark navbar-filled fixed-top">
             <Image src={hackathonLogo} height="60" width="60" alt="logo" />
             <button 
                 className="navbar-toggler" 

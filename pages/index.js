@@ -16,11 +16,8 @@ export default function Home() {
       <Menubar />
       <Landing />
       <div id="main-content" className="fluid-contaienr d-flex flex-column align-items-center">
-        {<About />
-        /* <Schedule />
+        <About />
         <Team />
-        <FAQ />
-        <Sponsors /> */}
       </div>
 
       {/* <Footer /> */}
