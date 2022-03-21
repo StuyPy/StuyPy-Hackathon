@@ -60,6 +60,7 @@ li .nav-link.active {
 }
 
 .content-section {
+    overflow: hidden;
     padding: 20px;
     margin: 2em;
     border-radius: 20px;
