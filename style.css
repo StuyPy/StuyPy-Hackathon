@@ -12,7 +12,7 @@ h1 {
 
 @media only screen and (max-width: 1000px) {
 
-    #about-section {
+    #about-section, #sponsors-list {
         flex-direction: column;
     }
 
@@ -185,6 +185,10 @@ li .nav-link.active {
 .social-logo:hover {
     transform: scale(1.2);
     transition: transform 0.3s;
+}
+
+#sponsors-list img {
+    width: 40%;
 }
 
 /*
