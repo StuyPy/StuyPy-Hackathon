@@ -188,6 +188,7 @@ li .nav-link.active {
 }
 
 .sponsor-link {
+    display: block;
     width: 40%;
     height: auto;
 }
