@@ -187,14 +187,8 @@ li .nav-link.active {
     transition: transform 0.3s;
 }
 
-.sponsor-link {
-    display: block;
+.sponsor-img {
     width: 40%;
-    height: auto;
-}
-
-.sponsor-link img {
-    width: 100%;
     height: auto;
 }
 
