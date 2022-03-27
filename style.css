@@ -188,6 +188,7 @@ li .nav-link.active {
 }
 
 .sponsor-img {
+    margin: 30px;
     max-width: 40%;
     height: auto;
 }
