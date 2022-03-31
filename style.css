@@ -10,6 +10,15 @@ h1 {
     font-weight: bold;
 }
 
+a {
+  color: white;
+  transition: 250ms all ease;
+}
+a:hover {
+  color: white;
+  opacity: 0.8;
+}
+
 @media only screen and (max-width: 1000px) {
 
     #about-section {
@@ -18,13 +27,17 @@ h1 {
 
 }
 
+.nav-image {
+  margin-right: 0.75rem;
+}
+
 .navbar-filled {
-    transition: background .5s;
+    transition: all 500ms ease;
 }
 
 .navbar-transparent {
     background: none;
-    transition: background .5s;
+    transition: all 500ms ease;
 }
 
 li .nav-link {
@@ -148,23 +161,14 @@ li .nav-link.active {
 .card-body {
     color: white;
     border-radius: 0 0 15px 15px;
-    transition: transform 0.3s;
-    transition: color 0.3s;
-    transition: background-color 0.3s;
-    transition: border-color 0.3s;
-    transition: border 0.1s;
+    transition: all 250ms ease;
 }
 
 .card-body:hover {
     transform: scale(1.05);
-    border-style: solid;
-    border-width: 2px;
+    box-sizing: border-box;
     background-color: white;
-    transition: transform 0.3s;
-    transition: color 0.3s;
-    transition: background-color 0.3s;
-    transition: border-color 0.3s;
-    transition: border 0.1s;
+    cursor: pointer;
 }
 
 .card-text {
@@ -173,8 +177,8 @@ li .nav-link.active {
 
 .faq-question {
     width: 100%;
-    margin: 5px;
-    padding: 10px;
+    margin: 0.6rem;
+    padding: 24px;
     border-radius: 20px;
 }
 
@@ -203,13 +207,9 @@ https://css-theme.hackclub.dev/
     color: white;
     font-size: 1rem;
     padding: 15px 20px 15px 20px;
-    border: none;
     border-radius: 30px;
     font-weight: 900;
-    transition: border-color 0.3s;
-    transition: color 0.3s;
-    transition: background-color 0.3s;
-    transition: border 0.1s;
+    transition: all 250ms ease;
 }
 
 .button-fill:hover {
@@ -217,12 +217,6 @@ https://css-theme.hackclub.dev/
     font-size: 1rem;
     background-color: white;
     padding: 15px 20px 15px 20px;
-    border-style: solid;
-    border-width: 2px;
     border-radius: 30px;
     font-weight: 900;
-    transition: border-color 0.3s;
-    transition: color 0.3s;
-    transition: background-color 0.3s;
-    transition: border 0.1s;
 }
